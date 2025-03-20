@@ -1,0 +1,11 @@
+    // let bufferFromString=Buffer.from("hello")
+    // console.log(bufferFromString);
+    
+    let allocatedBuffer=Buffer.alloc(6)
+    console.log(allocatedBuffer);
+    let bufferFromString=Buffer.from("hello")
+    allocatedBuffer.write("hello")
+    console.log(allocatedBuffer);
+    console.log(bufferFromString);
+    
+    
