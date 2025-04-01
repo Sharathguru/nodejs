@@ -1,0 +1,9 @@
+async function getEmployeesData() {
+    try {
+        let response = await fetch("http://localhost:8080");
+        let data = await response.json(); // Fix: Use `await response.json()`
+        console.log(data);
+    } catch (error) {
+        console.log("Error:", error); // Fix: Log the actual error
+    }
+}
